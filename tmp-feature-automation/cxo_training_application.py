@@ -45,13 +45,13 @@ def test_example(page: Page) -> None:
     page.goto("https://dev-training.sla.gov.bd/")
     
     # Extract text from the webpage
-    url = "https://dev-training.sla.gov.bd/"
+    url = "https://dev-training.sla.gov.bd/acmp-training"
     extracted_text = extract_text_from_webpage(url)
     for text in extracted_text:
         print(text)
 
     # Assert the page title to ensure the page has loaded correctly
-    expect(page).to_have_title("SLA TMS")
+    expect(page).to_have_title("DLA TMS")
 
     page.get_by_role("link", name="CXO Training").click()
 

@@ -31,8 +31,8 @@ test.describe('Homepage Functionalities', () => {
   });
 
   // Test: Navigate to ACMP Training
-  test('Navigate to ACMP Training', async ({ page }) => {
-    await page.getByRole('link', { name: 'ACMP Training' }).click();
+  test('Navigate to CXO Training', async ({ page }) => {
+    await page.getByRole('link', { name: 'CXO Training' }).click();
     
     // Add an assertion to verify that the ACMP Training page is loaded
     await expect(page).toHaveURL(/.*acmp-training/);
@@ -51,8 +51,8 @@ test.describe('Homepage Functionalities', () => {
 
 
   // Test: Navigate to Govt. Training
-  test('Navigate to Govt. Training', async ({ page }) => {
-    await page.getByRole('link', { name: 'Govt. Training' }).click();
+  test('Navigate to Govt. Official Training', async ({ page }) => {
+    await page.getByRole('link', { name: 'Govt. Official Training' }).click();
     await expect(page).toHaveURL(/.*govt-training/);
   });
 

@@ -29,7 +29,7 @@ def generate_random_name():
         "Omar", "Qureshi", "Rumi", "Sabir", "Tauseef", "Umer", "Vaseem", "Waqas", "Yawar", 
         "Zaheer", "Amin", "Aziz", "Badi", "Daud", "Faisal", "Ghani", "Hassan", "Ismail", 
         "Javed", "Karim", "Masood", "Naseem", "Owais", "Pervaiz", "Qasim", "Rana", "Sarwar", 
-        "Tariq", "Ubaid", "Waleed", "Yawar", "Zubair", "Farooq", "Anis", "Rauf", "Sheikh"
+        "Tariq", "Ubaid", "Waleed", "Yawar", "Zubair", "Farooq", "Anis", "Rauf", "Sheikh", "Harold"
     ]
     return f"{random.choice(first_names)} {random.choice(last_names)}"
 
@@ -131,7 +131,7 @@ def run(playwright: Playwright) -> None:
     page.get_by_placeholder("Password").click()
     page.get_by_placeholder("Password").fill("123456a@R")
     page.get_by_role("button", name="SIGN IN").click()
-    page.get_by_role("link", name="Govt Training").first.click()
+    page.get_by_role("link", name="Govt. Official Training").first.click()
     page.get_by_role("link", name="Batches").first.click()
     page.get_by_role("link", name=" Add New").click()
     page.get_by_label("Batch No").click()
@@ -144,10 +144,10 @@ def run(playwright: Playwright) -> None:
     page.get_by_role("textbox", name="Select Training Track").click()
     page.get_by_role("option", name="Big Data").click()
     page.get_by_label("Start Date").click()
-    page.get_by_role("cell", name="27").nth(1).click()
+    page.get_by_role("cell", name="20").nth(1).click()
     page.get_by_label("End Date").click()
-    page.get_by_role("cell", name="28").nth(1).click()
-    page.get_by_label("Duration (in hour)").fill("10")
+    page.get_by_role("cell", name="25").nth(1).click()
+    page.get_by_label("Duration (in hour)").fill("20")
     page.get_by_role("combobox").nth(2).click()
     page.get_by_role("option", name="Bon Jovi").click()
     page.get_by_label("Training Venue").click()
