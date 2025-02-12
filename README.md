@@ -21,11 +21,11 @@ The **EDGE Training Management Portal Automation** project automates the process
 - Responsive design tests
 
 ## Technologies Used
-- **Programming Language**: Python
-- **Framework**: Selenium WebDriver
+- **Programming Language**: Python, JavaScript
+- **Framework**: Playwright
 - **Test Runner**: PyTest
 - **Reporting**: Allure Reports
-- **Browser Automation**: ChromeDriver, GeckoDriver
+- **Browser Automation**: ChromeDriver, GeckoDriver, WebKit
 - **CI/CD**: GitHub Actions
 
 ## Setup Instructions
