@@ -30,7 +30,7 @@ test.describe('Login Functionalities', () => {
     
     // Fill in the login form with valid credentials
     await page.getByPlaceholder('Email Address').fill('gov@trainee.com');
-    await page.getByPlaceholder('Password').fill('123456a@R');
+    await page.getByPlaceholder('Password').fill('test');
     await page.getByRole('button', { name: 'SIGN IN' }).click();
 
     // Verify successful login by checking for a dashboard URL or a specific element
